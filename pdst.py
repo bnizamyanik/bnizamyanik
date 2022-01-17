@@ -17,7 +17,7 @@ def loadSeqs():
 
 seqs = loadSeqs()
 
-for seq1 in seqs:                                   # fasta formatında verilen sekans dizilerini birbirleri içerisinde kıyaslamaya yarar.
+for seq1 in seqs:                                   "fasta formatında verilen sekans dizilerini birbirleri içerisinde kıyaslamaya yarar."
     values = []
     for seq2 in seqs:
         dist = sum(c1!=c2 for c1,c2 in zip(seq1,seq2))  "karşılaştırılan 2 sekansın karakterleri tuple olarak tutulur. c1 ve c2 sekansların karakterlerine verilen isimdir. bu karakter sayısı kadar for döngsü döner. aynı olamayn karakter tuplesi için 1 puan verilir. sum fonksiyonu ile bu puanlar toplanır. "
